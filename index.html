@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Zdjęć</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="tabs">
+            <div class="tab" data-index="0"><img src="image1.jpg" alt="Zdjęcie 1"></div> <!-- Karta z obrazem o indeksie 0 -->
+            <div class="tab" data-index="1"><img src="image2.jpg" alt="Zdjęcie 2"></div> <!-- Karta z obrazem o indeksie 1 -->
+            <div class="tab" data-index="2"><img src="image3.jpg" alt="Zdjęcie 3"></div> <!-- Karta z obrazem o indeksie 2 -->
+            <div class="tab" data-index="3"><img src="image4.jpg" alt="Zdjęcie 4"></div> <!-- Karta z obrazem o indeksie 3 -->
+        </div>
+        <button class="nav left" id="prevBtn">&#10094;</button> 
+        <!-- Przycisk do przejścia do poprzedniego zdjęcia -->
+        <button class="nav right" id="nextBtn">&#10095;</button> 
+        <!-- Przycisk do przejścia do następnego zdjęcia
+         -->
+    </div>
+    <div class="thumbnails">
+        <!--data-index - kolejność wykonywania operacji-->
+        <span class="thumb" data-index="0"></span> 
+        <span class="thumb" data-index="1"></span> 
+        <span class="thumb" data-index="2"></span> 
+        <span class="thumb" data-index="3"></span>  
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
